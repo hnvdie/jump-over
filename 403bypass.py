@@ -39,7 +39,6 @@ def req_escape(u,pattern):
 
 def req_header(u,header):
     head[list(header)[0]] = header[list(header)[0]]
-    print(head)
     xw = f"{list(header)[0]}:{header[list(header)[0]]}"
     req = requests.get(u,headers=head)
     if req.status_code != 403:
